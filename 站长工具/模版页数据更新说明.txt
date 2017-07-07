@@ -1,0 +1,5 @@
+1、解压压缩包 模版页数据采集.rar
+
+2、使用 模版页数据采集工具 采集热门模版和最新模版数据
+
+3、复制目录下的【moban.json】和【remenmoban.json】文件到static_data目录下

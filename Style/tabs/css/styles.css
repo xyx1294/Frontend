@@ -1,0 +1,438 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font-family:'Roboto Condensed',arial,helvetica,sans-serif;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;background-color:#F8F8F8;}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content1:'';content1:none}table{border-collapse:collapse;border-spacing:0}
+
+.header{
+   width: 100%;
+   display: block;
+   text-align: center;
+   padding: 20px 0;
+   font-size: 15px;
+   color: #505050;
+   background-color: #fff;
+   margin-bottom: 30px;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+.header h1{
+   font-size: 60px;
+   font-weight: bold;
+   color: #ff7260;
+   margin: 0 0 15px 0;
+   padding: 0;
+}
+.header a{
+   color: #ff7260;
+   font-size: 15px;
+   text-decoration: underline;
+}
+.header a:hover{
+   color: #505050;
+}
+
+.header p{
+   margin: 6px 0;
+   padding: 0;
+   font-size: 15px;
+   color: #505050;
+}
+.header p.header_buttons{
+   margin-top: 15px;
+}
+.header p.header_buttons a{
+   background-color: #ff7260;
+   color: #fff;
+   display: inline-block;
+   text-align: center;
+   padding: 10px 30px;
+   margin: 0 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+p.header_buttons a:hover{
+   background-color: #9bd7d5;
+}
+.content1{
+   width: 940px;
+   display: block;
+   margin: 0 auto;
+   padding-bottom: 20px;
+}
+.content1 .demo_responsive{
+   width: 100%;
+   padding: 0 20px;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+.content1 h2{
+   font-size: 40px;
+   font-weight: bold;
+   color: #fff;
+   margin-bottom: 30px;
+   margin-top: 30px;
+}
+.content1 h3{
+   font-size: 35px;
+   font-weight: 300;
+   color: #fff;
+   margin-bottom: 15px;
+   margin-top: 25px;
+}
+.content1 a{
+   /*color: #fff5c3;*/
+   text-decoration: underline;
+}
+.content1 a:hover{
+   color: #fff;
+   text-decoration: none;
+}
+.content1 code{
+   width: 100%;
+   background-color: #f0f0f0;
+   display: block;
+   padding: 20px;
+   color: #000;
+   letter-spacing: 0.5px;
+   font-size: 16px;
+   font-weight: normal;
+   margin: 15px 0 30px 0;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+.content1 p{
+   /*color: #fff;*/
+   font-size: 17px;
+   margin: 15px 0;
+}
+.content1 strong{
+   font-weight: bold;
+   font-size: 17px;
+   color: #fff5c3;
+}
+.content1 code strong{
+   color: #000;
+}
+.content1 table{
+   background-color: #fff;
+   width: 100%;
+}
+.content1 table thead tr th{
+   border: 1px solid #505050;
+   padding: 8px;
+   font-size: 17px;
+   color: #ff7260;
+   font-weight: bold;
+}
+.content1 table tr:nth-child(even) td{
+   background-color: #f0f0f0;
+}
+.content1 .pws_example_mixed_content1_block{
+   width: 900px;
+   position: relative;
+}
+.content1 .pws_example_mixed_content1_block:after{
+   display: block;
+   content1: '';
+   clear: both;
+}
+.content1 .pws_example_mixed_content1_left{
+   width: 350px;
+   position: relative;
+   float: left;
+   display: block;
+}
+.content1 .pws_example_mixed_content1_right{
+   width: 550px;
+   position: relative;
+   float: left;
+   display: block;
+   color: #505050;
+}
+.content1 .pws_example_mixed_content1_right h3,
+.content1 .pws_example_mixed_content1_right p{
+   margin: 0 0 15px 0;
+   color: #505050;
+}
+table tbody tr td{
+   border: 1px solid #505050;
+   padding: 8px;
+   font-size: 17px;
+   color: #505050;
+   font-weight: 300;
+}
+/* Demo colors */
+.content1 .pws_demo_colors{
+   display: block;
+   margin: 15px auto;
+}
+.content1 .pws_demo_colors a{
+   width: 30px;
+   height: 30px;
+   display: inline-block;
+   border: 3px solid #fff;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+.content1 .pws_demo_colors a[data-demo-color="cyan"]{
+   background-color: #9bd7d5;
+}
+.content1 .pws_demo_colors a[data-demo-color="violet"]{
+   background-color: #c72c66;
+}
+.content1 .pws_demo_colors a[data-demo-color="green"]{
+   background-color: #86c447;
+}
+.content1 .pws_demo_colors a[data-demo-color="yellow"]{
+   background-color: #fdb813;
+}
+.content1 .pws_demo_colors a[data-demo-color="gold"]{
+   background-color: #f89827;
+}
+.content1 .pws_demo_colors a[data-demo-color="orange"]{
+   background-color: #f15b42;
+}
+.content1 .pws_demo_colors a[data-demo-color="red"]{
+   background-color: #e41937;
+}
+.content1 .pws_demo_colors a[data-demo-color="purple"]{
+   background-color: #672e8d;
+}
+.content1 .pws_demo_colors a[data-demo-color="grey"]{
+   background-color: #4d4d4f;
+}
+.footer{
+   display: block;
+   padding: 30px 0 15px 0;
+   text-align: center;
+   color: #fff;
+   font-size: 15px;
+}
+.footer a{
+   color: #fff;
+   text-decoration: underline;
+   font-size: 15px;
+}
+.footer a:hover{
+   text-decoration: none;
+}
+/*----------------------------------------------------------¸öÈËÌí¼Ó*/
+.clear {
+    clear:both;
+}
+.geren {
+    width:900px;
+    padding:20px;
+    margin:0 0;
+}
+   /* .geren .input {
+        display:inline-block;
+        width:200px;
+    }
+    .geren input {
+           height:30px;
+           line-height:30px;
+           text-align:center; 
+           width:200px;
+           font-size:14px;
+    }
+    .geren .btn input{
+        width:100px;
+    }
+    .geren .btn {
+        padding-left:165px;
+    }
+.geren .gerenbox {
+    float:left;
+}
+    .geren img {
+        display:block;
+        margin:0 auto;
+    }
+.geren .touxiang {
+   width:100px;
+   background:#129793;
+   color:#fff;
+   height:30px;
+   line-height:30px;
+   text-align:center; 
+   margin:30px;
+   display:inline-block;
+}
+.geren .nicheng {
+   width:100px;
+   background:#129793;
+   color:#fff;
+   height:30px;
+   line-height:30px;
+   text-align:center; 
+   margin:30px;
+      display:inline-block;
+}
+.geren .youxiang {
+   width:100px;
+   background:#129793;
+   color:#fff;
+   height:30px;
+   line-height:30px;
+   text-align:center; 
+   margin:30px;
+      display:inline-block;
+}
+.geren .qq {
+   width:100px;
+   background:#129793;
+   color:#fff;
+   height:30px;
+   line-height:30px;
+   text-align:center; 
+   margin:30px;
+      display:inline-block;
+}*/
+
+
+.wenzhang ul {
+                list-style-type:disc;
+}
+.wenzhang .timer {
+    font-size: 12px;
+    float:right;
+}
+.wenzhang ul li small{
+    font-size: 14px;
+}
+.wenzhang ul li h4{
+                    max-width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color:#505050;
+}
+    .wenzhang ul li h4 a:hover{
+        color:#ff7260;
+    }
+.wenzhang ul li p {
+    font-size:13px;
+                        /*display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;*/
+                    color:#505050;
+}
+ .wenzhang {
+width:100%;
+}
+
+.uvideo .uvbox {
+    margin: 32px;
+    height: 180px;
+    background: #ffffff;
+    box-shadow: 1px 1px 1px #ccc;
+    border-radius: 5px 5px 5px 5px;
+}
+.uvideo .uvbox .alert {
+    display: none;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    margin-top: -120px;
+    padding-top: 20px;
+}
+.uvideo .uvbox .alert img {
+                        width: 30px;
+                        height: auto;
+                    }
+
+.uvideo .uvbox .fengmian1 {
+        width: 100%;
+        height: 120px;
+        background: url(../../../images/video/videobg2.jpg) no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        border-radius: 5px 5px 5px 5px;
+    }
+.uvideo  .uvbox span {
+                        display: block;
+                        height: 120px;
+                        line-height: 110px;
+                        font-size: 22px;
+                        color: #fff;
+                        text-align: center;
+                    }
+.uvideo  p {
+                    color: #333333;
+                    margin: 10px;
+                }
+
+#videobox {
+display:none;
+width:800px;
+height:540px;
+}
+
+
+.shoucang ul {
+                list-style-type:disc;
+}
+.shoucang .timer {
+    font-size: 12px;
+    float:right;
+}
+.shoucang ul li small{
+    font-size: 14px;
+}
+.shoucang ul li h4{
+                    max-width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color:#505050;
+}
+    .shoucang ul li h4 a:hover{
+        color:#ff7260;
+    }
+.shoucang ul li p {
+    font-size:13px;
+                        /*display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;*/
+                    color:#505050;
+}
+.shoucang {
+width:100%;
+}
+
+.lyb {
+    width:900px;
+display:block;
+}
+
+.userly {
+    margin-top:20px;
+}
+    .userly li {
+    margin-top:20px;display:block;
+    }
+        .userly li h6 {
+        color:#9a9a9a;font-size:15px;margin-left:20px;margin-bottom:8px;display:block;
+        }
+    .userly .userbox {
+    margin-top:20px;
+    }
+        .userly .userbox .usertouxiang {
+        
+        }
+        .userly .userbox .usercontent a{
+        font-size:13px;letter-spacing:0px;text-decoration:none;
+        }
+        .userly .userbox .usercontent span {
+            display: inline-block;
+            float: right;
+            color: #9a9a9a;
+            letter-spacing: 0px;
+            font-size: 13px;
+        }

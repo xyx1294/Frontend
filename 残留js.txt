@@ -1,0 +1,47 @@
+    //获取菜单
+    //var menu = "";
+    //var i = 0;
+    //$.ajax({
+    //    url: "Handler.ashx",
+    //    type: "POST",
+    //    data: { cmd: "menuclass" },
+    //    async: false,
+    //    success: function (data) {
+    //        var json1 = eval(data);
+    //        for (i = 0; i < json1.length; i++) {
+    //            var fuclass = json1[i]["class"];
+    //            menu = '<li class="fenlei pure-menu-item"><a href="javascript:;">' + fuclass + '</a><ul class="pure-menu-list erji">';
+    //            $.ajax({
+    //                url: "Handler.ashx",
+    //                type: "POST",
+    //                data: { cmd: "menuziclass", fuclass: fuclass },
+    //                async: false,
+    //                success: function (data) {
+    //                    var json2 = eval(data);
+    //                    for (var j = 0; j < json2.length; j++) {
+    //                        var ziclass = json2[j]["ziclass"];
+    //                        menu += '<li class="pure-menu-item"><a href="javascript:;" class="pure-menu-link">>&nbsp;&nbsp;&nbsp;&nbsp;' + ziclass + '</a></li>';
+    //                    };
+    //                },
+    //                erroe: function () {
+    //                    layer.alert("菜单获取失败，请检查网络！");
+    //                }
+    //            });
+    //            menu += '</ul></li>';
+    //            $("#menu .daohang").append(menu);
+    //        }
+    //    },
+    //    erroe: function () {
+    //        layer.alert("菜单获取失败，请检查网络！");
+    //    }
+    //});
+    //i = 0;
+    //menu = "";
+
+    //header背景控制
+    //$(document).scroll(function () {
+    //    if ($(this).scrollTop() == 0)
+    //    { $(".header").css({ "background-color": "#fff","color":"#000" }); }
+    //    else
+    //    { $(".header").css({ "background-color": "rgba(255,255,255,0.2)", "color": "#fff" }); }
+    //});

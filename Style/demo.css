@@ -1,0 +1,65 @@
+﻿*{
+margin:0;
+padding:0;
+}
+body{
+    height:100%;
+}
+#menu{
+    position:fixed;
+    width:190px;
+    height:100%;
+    background:#212121;
+    z-index:2;
+}
+#menu ul>li{
+    display:block;
+    text-align:center;
+    color:#fff;
+    height:50px;
+    line-height:50px;
+    font-family:"微软雅黑";
+    font-size:15px;
+}
+#menu a{
+    text-decoration:none;
+    color:#fff;
+}
+#menu .erji{
+    display:none;
+    position:fixed;
+    left:190px;
+}
+.erji li{
+    width:100px;
+    height:50px;
+    line-height:50px;
+    background:#212121;
+}
+#menuhd{
+    display:block;
+    position:relative;
+    height:100%;
+    width:300px;
+    background:#00ff21;
+    border:solid 5px #00ff21;
+    z-index:3;
+}
+
+#banner{
+    position:fixed;
+    height:80px;
+    width:100%;
+    box-shadow:1px 1px 10px #ccc;
+    left:190px;
+    z-index:1;
+    background:#fff;
+}
+
+#content {
+    position:relative;
+    background:#FAFAFA;
+    /*background:#000000;*/
+    display:inline-block;
+    width:100%;
+}

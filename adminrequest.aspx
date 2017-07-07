@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="adminrequest.aspx.cs" Inherits="adminrequest" %>

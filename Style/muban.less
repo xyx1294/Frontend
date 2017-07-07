@@ -1,0 +1,418 @@
+﻿@ctt_h:1024px;/*右边内容大小*/
+@menu_htc:#48aed5;/*菜单头字体颜色*/
+@menu_hbc:#3A3A3A;/*菜单头背景颜色*/
+@menu_bc:#3A3A3A;/*菜单背景颜色*/
+@menu_hc:#8B877B;/*菜单悬停和点击时的颜色*/
+@menu_1ac:#A7C8B2;/*一级导航颜色*/
+/*@menu_2ac:#191818;二级导航颜色*/
+@menu_fc:#999999;/*菜单分隔符颜色*/
+
+@head_bb:#fff;/*收缩header按钮背景*/
+*{
+    margin:0;
+    padding:0;
+}
+.sousuobg {
+    background:#ccc;
+}
+#logo {
+    width:190px;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:1001;
+background:#3A3A3A;
+transition:all 0.5s;
+        .home { /*Home样式*/
+            display: inline-block;
+            float:left;
+            height:60px;
+            border-bottom:solid 2px #8C877A;
+            /*margin-top:5px;*/
+        }
+            .bn { /*banner收缩按钮样式*/
+            display: inline-block;
+            /*font-size: 40px;
+            line-height: 60px;*/
+            height:60px;
+            /*background: @head_bb;*/ 
+            cursor:pointer;
+            /*color:#444444;*/
+            position:absolute;
+            top:0;
+            left:165px;
+            width:37px;
+            /*text-align:center;*/
+
+        }
+}
+.header {
+    z-index: 999;
+    position: fixed;
+    margin: 0;
+    top: 0px;
+    color: #333;
+    box-shadow: 1px 1px 10px #ccc;
+    width: 100%;
+    height: 60px;
+    background:rgba(255,255,255,0.9);
+    margin-left: -190px;
+
+    .sousuo {
+        #texttitle {
+            width: 60%;
+            height: 30px;
+            line-height:30px;
+            padding-right:20px; 
+            background:url("../images/ui/seach.png") center left no-repeat transparent; 
+            padding-left:20px;
+            background-size:15px 15px;
+            border:1px #ccc solid;
+        }
+
+        ul {
+            list-style-type: none;
+            display: inline-block;
+            width: 60%;
+            box-shadow: 0px 1px 1px #ccc;
+            background:#fff;
+            li {
+                margin: 3px 0px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    .login {
+        height: 30px;
+        display: block;
+        width: 80px;
+        float: right;
+        margin-top:15px;
+        /*margin:auto auto;*/
+        a {
+            display: block;
+            text-decoration: none;
+            color: #48aed5;
+            line-height: 30px;
+            /*background:#4390EE;登录按钮背景颜色*/
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+body {
+    color: #777;
+}
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    width: @ctt_h;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+    }
+
+    .pure-img-responsive { /*自动调整图片高宽*/
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-subhead { /*底部内容内容标题*/
+        margin: 50px 0 20px 0;
+        font-weight: 300;
+        color: #888;
+    }
+
+
+
+
+/*
+Add transition to containers so they can push in and out.
+*/
+/*#layout,*/
+
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+#layout {
+    position: relative;
+    padding-left: 0;
+}
+    #layout.active #menu {
+        left: 190px;
+        width: 190px;
+    }
+
+    #layout.active .menu-link {
+        left: 190px;
+    }
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+*/
+
+#menu {
+    /*.fenlei {
+        border-top:solid 1px #999999;
+    }*/
+    /*控制二级菜单高度*/
+        .pure-menu-link {
+        padding:5px 10px;
+    }
+        .fenlei > a {
+            text-decoration: none;
+            height: 30px;
+            /*background:@menu_1ac;一级菜单颜色*/
+            color: @menu_1ac;
+            display: block;
+            line-height: 30px;
+            transition: background-color 0.3s;
+            padding: 5px;
+        }
+
+    .erji a {
+        text-decoration:none;
+        transition: background-color 0.3s;
+        /*background:@menu_2ac;二级菜单颜色*/
+    }
+
+    margin-left: -190px; /* "#menu" width */
+    width: 190px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* 菜单最前 */
+    background: @menu_bc; /* 菜单背景颜色 */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    .pure-menu-heading {
+        display: block;
+        font-size: 110%;
+        color: @menu_htc; /*菜单头字体颜色*/
+        margin: 0;
+        padding: 0;
+        height: 46px;
+        width: 100%;
+        line-height: 46px;
+        background: @menu_hbc; /*菜单头背景颜色*/
+    }
+    /*All anchors inside the menu should be styled like this.*/
+    a {
+        /*color: #fff;*/
+        border: none;
+        padding: 0.6em 0 0.6em 0.6em;
+    }
+    /*
+    清除所有的背景/边界，因为我们把它们应用到#menu。
+    */
+    .pure-menu,
+    .pure-menu ul {
+        border: none;
+        background: transparent;
+    }
+        /*
+    添加到单独的项目组到组。
+    */
+        .pure-menu ul,
+        .pure-menu .menu-item-divided { /*加分隔符*/
+            /*border-top: 1px solid;*/
+            /*border-top-color: @menu_fc; 菜单分隔颜色*/
+            li ul {
+                font-size: 13px;
+            }
+        }
+        /*
+    悬停/焦点上的锚链接的颜色变化。
+    */
+        .pure-menu li a:hover,
+        .pure-menu li a:focus { /*二级菜单点击后的颜色*/
+            background-color: @menu_hc; /*导航悬停时颜色*/
+            color:#fff;
+        }
+}
+
+
+/* -响应菜单------------------------------------- *动态按钮/
+/*
+打开/关闭菜单的按钮是定制的，而不是纯粹的一部分。这里的
+它是如何工作的：
+*/
+/*
+“菜单链接”表示显示/隐藏的响应菜单切换。
+小屏幕。
+*/
+.menu-link {
+    position: fixed;
+    display: block; /* 仅在小屏幕上显示这个 */
+    top: 0;
+    left: 0; /* "#menu width" */
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    font-size: 10px; /* 改变这个值来增加/减少按钮的大小 */
+    z-index: 10;
+    width: 2em;
+    height: auto;
+    padding: 2.1em 1.6em;
+}
+
+    .menu-link:hover,
+    .menu-link:focus {
+        background: #000;
+    }
+
+    .menu-link span {
+        position: relative;
+        display: block;
+    }
+
+    .menu-link span,
+    .menu-link span:before,
+    .menu-link span:after {
+        background-color: #fff;
+        width: 100%;
+        height: 0.2em;
+    }
+
+        .menu-link span:before,
+        .menu-link span:after {
+            position: absolute;
+            margin-top: -0.6em;
+            content: " ";
+        }
+
+        .menu-link span:after {
+            margin-top: 0.6em;
+        }
+
+
+/* -- 响应样式（媒体查询） ------------------------------------- */
+/*滚动条-----------------------------------------------*/
+    ::-webkit-scrollbar {
+		  width: 5px;
+	} /* 这是针对缺省样式 (必须的) */
+	::-webkit-scrollbar-track {
+		  background-color: #fff;
+	} /* 滚动条的滑轨背景颜色 */
+
+	::-webkit-scrollbar-thumb {
+		  background-color: #48C43B;
+	} /* 滑块颜色 */
+
+	::-webkit-scrollbar-button {
+		  /*background-color:#f39c12;*/
+	} /* 滑轨两头的监听按钮颜色 */
+
+	::-webkit-scrollbar-corner {
+		  background-color: black;
+	} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+
+/*
+窗口48em时隐藏菜单，但在此基础上修改你的应用程序的需求。
+*/
+@media (min-width: 48em) {/*窗口宽度大于768px时样式*/
+    /*.header,
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }*/
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    #layout {
+        padding-left: 190px; /* left col width "#menu" */
+        left: 0;
+    }
+    #menu {
+        left: 190px;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 190px;
+        display: none;
+    }
+
+    #layout.active .menu-link {
+        left: 190px;
+    }
+}
+
+@media (max-width: 48em) {/*窗口宽度小于768px时样式*/
+    /* Only apply this when the window is small. Otherwise, the following
+    case results in extra padding on the left:
+        * Make the window small.
+        * Tap the menu to trigger the active state.
+        * Make the window large again.
+    */
+    #layout.active {
+        position: relative;
+        left: 190px;
+    }
+    .header{
+        margin-left:0px;
+    }
+    /*.header{
+        top:-80px;
+    }*/
+}
+
+
+
+    /*定义一些颜色，以便看到各模块的位置*/
+    .c1{background-color:#fff;color:#fff;}
+    /*background-color: #1abc9c;*/
+    .c2{background-color:#fff;color:#fff;}
+    .c3{background-color:#fff;color:#fff;}
+    .c4{background-color: #f39c12;color:#FFF;}
+    .c5{background-color: #c0392b;color:#FFF;}
+    .c6{background-color: #999999;color:#FFF;}
+    .gd-500{min-height: 500px;}/*用于占位*/
+    .gd-50{min-height: 50px;}/*用于占位*/
+    .gd-100{min-height: 100px;}/*用于占位*/
+    .gd-200{min-height: 200px;}/*用于占位*/
+    .mg{margin: 3px;}/*增加边距*/
+    .main{max-width: 1024px;margin: 0 auto;}/*页面主体*/
+
+
+    html, button, input, select, textarea, .pure-g [class *= "pure-u"], .pure-g-r [class *= "pure-u"] {
+     /*font-family: Georgia, Times, "Times New Roman", serif;*/ 
+     font-family:Microsoft YaHei;
+}
+
+#loginbox{
+    height:500px;
+    background:#60C4FD;
+    display:none;
+    .denglu{
+        height:100%;
+        width:50%;
+        background:#444444;
+        display:inline-block;
+        margin:0;
+    }
+    .zhuce{
+        height:100%;
+        width:50%;
+        background:#999999;
+        display:inline-block;
+         margin:0;
+         float:right;
+    }
+}

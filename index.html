@@ -1,0 +1,489 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--当前网页宽度=设备宽度并且1：1缩放-->
+<meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>最.前端 - 专注于WEB前端开发 - 资源共享平台</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+<link rel="stylesheet" href="Style/pure-min.css">
+<link href="scripts/animate.css" rel="stylesheet" />
+<link href="Style/buttons.css" rel="stylesheet" />
+<link href="Style/bootstrap/bootstrap.min.css" rel="stylesheet" />
+<link href="Style/idangerous.swiper.css" rel="stylesheet" />
+    <script src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="video/jwplayer.js"></script>
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="Style/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <!--  <link rel="stylesheet" href="Style/layouts/side-menu.css"> 本来没注释-->
+    <link type="text/css" href="Style/index_style.less" rel="stylesheet/less">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+         <script src="scripts/jianrong/html5shiv.js"></script>
+         <script src="scripts/jianrong/respond.min.js"></script>
+      <![endif]-->
+</head>
+<body>
+<div id="layout">
+    <div id="toplunbo">
+        <div class="btnbox">        
+        <div class="lbbtn"></div>
+        <div class="lbbtn"></div>
+        <div class="lbbtn"></div>
+        <div class="lbbtn"></div>
+        </div>
+    </div>
+
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+                <div id="logo"><a class="pure-menu-heading home" href="index.html"><img src="images/LOGO2.png" /></a><span class="bn"><img src="images/bn.png" /></span></div>
+            <div style="clear:both;"></div>
+    <div id="menu">
+        <div class="pure-menu">
+                <ul class="daohang pure-menu-list">
+                    
+                 </ul>
+        </div>
+    </div>
+<!--轮播-->
+<!-- <div id="lunbo">
+    <img src="images/lunbo/1.jpg" />
+    <img src="images/lunbo/2.jpg" />
+    <img src="images/lunbo/3.jpg" />
+     <div class="btnbox">
+    <div class="lbbtn"></div>
+    <div class="lbbtn"></div>
+    <div class="lbbtn"></div>
+         </div>
+</div>-->
+
+    <div id="main">
+
+        <div class="header pure-g">
+            <div class="pure-u-1-3">
+<!--            <img src="images/logo4.png" style="width:300px; height:80px" />-->
+                </div>
+                        <div class="pure-u-1-3">
+                            </div>
+            <div class="pure-u-1-3 sousuo">
+                                           <input type="search" id="texttitle" autocomplete="off" maxlength="50" style="margin-top:17px;"/>
+                            <a href="javascript:;" id="gjsousuo" style="margin-top:15px;margin-left:10px;color:rgb(128,128,128);" >高级搜索</a>
+                <div class="login"><a href="javascript:;" style="color:rgb(128,128,128);">登录/注册</a></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="pure-g daohangbtn">
+            <div style="width:193.6px;"><img src="images/ui/dh1.png" class="ico" /><a href="#">精华采撷</a></div>
+            <div style="width:193.6px;"><img src="images/ui/dh2.png" class="ico" /><a href="#">热门排行</a></div>
+            <div style="width:193.6px;"><img src="images/ui/dh3.png" class="ico" /><a href="#">最新分享</a></div>
+            <div style="width:193.6px;"><img src="images/ui/dh4.png" class="ico" /><a href="#">最新视频</a></div>
+            <div style="width:193.6px;"><img src="images/ui/dh5.png" class="ico" /><a href="#">热门模版</a></div>
+                </div>
+
+            <div class="ctt-zxdt" name="zxdt" style="width:100%;">
+                <h3 class="title">
+                    <strong>最新动态</strong>
+                </h3>
+                <ul style="list-style-type:none;display:inline-block;width:484px;">
+                    <li>
+                    <div class="zxdt pure-g">
+                        <div class="pure-u-1-6 pure-u-" style="height:50px;"><img src="images/touxiang.png" style="height:50px;width:50px;border-radius:100%;" /></div>
+                        <div class="pure-u-5-6 dongtai" style="height:50px;">
+<!--                            <a href="user_index.aspx?user=网络日光">网络日光</a>评论了 <a href="#">最新标签以及最新js技术</a> ：非常好！
+                            <P>10 分钟前</P>-->
+                        </div>
+                    </div>
+                        </li>
+                                        <li>
+                    <div class="zxdt pure-g">
+                        <div class="pure-u-1-6" style="height:50px;"><img src="images/touxiang.png" style="height:50px;width:50px;border-radius:100%;" /></div>
+                        <div class="pure-u-5-6 dongtai" style="height:50px;">
+<!--                            <a href="user_index.aspx?user=网络日光">ysm</a>关注了 <a href="#">网络日光</a>
+                            <P>1 小时前</P>-->
+                        </div>
+                    </div>
+                        </li>
+                                        <li>
+                    <div class="zxdt pure-g">
+                        <div class="pure-u-1-6" style="height:50px;"><img src="images/touxiang.png" style="height:50px;width:50px;border-radius:100%;" /></div>
+                        <div class="pure-u-5-6 dongtai" style="height:50px;">
+ <!--                           <a href="user_index.aspx?user=丁丁">丁丁</a>在<a href="#">东东</a>空间留言：到此一游！
+                            <P>2 分钟前</P>-->
+                        </div>
+                    </div>
+                        </li>
+                    </ul>
+                <div id="lunbowz"  style="float:right;width:484px;">
+                    <div class="tit"><a href="wenzhang.aspx?tid=1000" target="_blank"></a></div>
+<!--                    <div style="position:relative;float:left;height:50px;background:rgba(0,0,0,0.1);line-height:50px;text-align:center;font-size:30px;width:30px;top:25px;color:#fff;cursor:pointer;"><</div>
+                     <div style="clear:both;"></div>
+                    <div style="position:relative;float:right;height:50px;background:rgba(0,0,0,0.1);line-height:50px;text-align:center;font-size:30px;width:30px;top:-25px;color:#fff;cursor:pointer;">></div>
+                    <div style="clear:both;"></div>-->
+                    <div style="margin:0 auto;width:100px;margin-top:110px;">
+                    <div class="btn1 lbtn" style="margin-left:20px;"></div><div class="btn2 lbtn"></div><div class="btn3 lbtn"></div>
+                    </div>
+                 </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="ctt-jinghua" style="width:645.33px;float:left;">
+            <h3 class="title">
+                <strong>精华采撷</strong>
+            </h3>
+                <ul>
+                    <li><span class="label-1">1</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                    <li><span class="label-2">2</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                    <li><span class="label-3">3</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                    <li><span class="label">4</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                    <li><span class="label">5</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                    <li><span class="label">6</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                    <li><span class="label">7</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                    <li><span class="label">8</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                    <li><span class="label">9</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                    <li><span class="label">10</span><a href="javascript:;" target="_blank">javascript入门</a><p><span class="glyphicon glyphicon-hand-up" style="color: rgb(255, 140, 60);">22</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment" style="color: rgb(255, 140, 60);">10</span></p></li>
+                </ul>
+                </div>
+
+            <div class="et_pb_widget" id="kan" style="width:242px;float:right;display:inline-block;"> 
+                                  <h4 class="widgettitle">猜你想看</h4>   
+                                  <ul class="widget_list">
+                                      <li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/javascript-tutorial-list.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1601/201601161744.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1601/201601161744.jpg" target="_blank">JavaScript系列教程栏目列表</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2016-01-16</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+<li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201502111368.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1502/201502112102.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1502/201502112102.jpg" target="_blank">HTML5 canvas画图及图片上传服务器</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2015-02-11</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+<li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201504051631.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1504/201504052139.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1504/201504052139.jpg" target="_blank">使用CSS3制作各种形状的图形</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2015-04-06</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+<li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201507082192.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1507/201507081852.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1507/201507081852.jpg" target="_blank">SVG系列教程目录</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2015-07-08</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+<li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201502101363.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1502/201502102207.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1502/201502102207.jpg" target="_blank">使用html5 canvas制作涂鸦画板</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2015-02-10</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+
+                                  </ul>
+                                  
+            </div>
+
+            <div class="ctt-remen" style="width:645.33px;float:left;">
+            <h3 class="title">
+                <strong>热门排行</strong>
+            </h3>
+                <ul>
+                    <li><span class="label-1">1</span><a href="javascript:;" target="_blank">javascript入门</a><p></p></li>
+                    <li><span class="label-2">2</span><a href="javascript:;" target="_blank">javascript入门</a><p></li>
+                    <li><span class="label-3">3</span><a href="javascript:;" target="_blank">javascript入门</a><p></li>
+                    <li><span class="label">4</span><a href="javascript:;" target="_blank">javascript入门</a><p></li>
+                    <li><span class="label">5</span><a href="javascript:;" target="_blank">javascript入门</a><p></li>
+                    <li><span class="label">6</span><a href="javascript:;" target="_blank">javascript入门</a><p></li>
+                    <li><span class="label">7</span><a href="javascript:;" target="_blank">javascript入门</a><p></li>
+                    <li><span class="label">8</span><a href="javascript:;" target="_blank">javascript入门</a><p></li>
+                    <li><span class="label">9</span><a href="javascript:;" target="_blank">javascript入门</a><p></li>
+                    <li><span class="label">10</span><a href="javascript:;" target="_blank">javascript入门</a><p></li>
+                </ul>
+                </div>
+            <div class="pure-u-1-4 et_pb_widget" id="xue" style="width:242px;float:right;display:inline-block;"> 
+                                  <h4 class="widgettitle"><a href="video.aspx" target="_blank">推荐视频</a></h4>   
+                                  <ul class="widget_list">
+                                      <li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/javascript-tutorial-list.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1601/201601161744.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1601/201601161744.jpg" target="_blank">JavaScript系列教程栏目列表</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2016-01-16</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+<li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201502111368.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1502/201502112102.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1502/201502112102.jpg" target="_blank">HTML5 canvas画图及图片上传服务器</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2015-02-11</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+<li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201504051631.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1504/201504052139.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1504/201504052139.jpg" target="_blank">使用CSS3制作各种形状的图形</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2015-04-06</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+<li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201507082192.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1507/201507081852.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1507/201507081852.jpg" target="_blank">SVG系列教程目录</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2015-07-08</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+<li>
+                                            <a href="http://www.htmleaf.com/ziliaoku/qianduanjiaocheng/201502101363.html" class="widget_list_thumbnail" style="background-color:#54d0e2" target="_blank">
+                                                <img src="http://img.htmleaf.com/1502/201502102207.jpg" style="background-color:#54d0e2;width: 50px;height:50px;">
+                                              </a>                
+                                            <div class="post_info">
+                                                <a href="http://img.htmleaf.com/1502/201502102207.jpg" target="_blank">使用html5 canvas制作涂鸦画板</a>
+                                                  <div class="post-meta">
+                                                      <i class="fa fa-clock-o"></i> <span class="updated">2015-02-10</span> 
+                                                  </div>
+                                            </div>
+                                        </li>
+
+                                  </ul>
+                                  
+            </div>
+
+             <div class="ctt-zuixin pure-u-1" name="zuixin">
+            <h3 class="title">
+                <strong>最新分享</strong><a href="fabiao.aspx" class="button button-action button-rounded" target="_blank">发表</a>
+            </h3>
+                <ul>
+                </ul>
+                 <div class="pure-u-1-1">
+                     <div class="tcdPageCode"></div>
+                 </div>
+                </div>
+                         <div class="ctt-zxvideo pure-u-1" name="zxvideo">
+            <h3 class="title">
+                <strong>最新视频</strong><a href="video.aspx" class="button button-action button-rounded" target="_blank">更多</a>
+            </h3>
+                    <div class="uvideo">
+                    </div>
+                             <div style="clear:both;"></div>
+                </div>
+
+             <div class="ctt-zxmoban pure-u-1" name="zxmoban">
+            <h3 class="title">
+                <strong>热门模版</strong><a href="moban.aspx" class="button button-action button-rounded" target="_blank">更多</a>
+            </h3>
+
+                 <div id="lunbo">
+                <div id="pic">
+                <ul>
+                </ul>
+                </div>
+                </div>
+
+                </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="mng">
+        <div class="fimg"></div>
+        <div class="fyouqing"><h3 style="color:#fff;margin-left:50px;">友情链接</h3>
+            <ul style="list-style:none;">
+                <li><a href="">前端开发</a></li>
+                <li><a href="">前端技术</a></li>
+                <li><a href="">前端博客</a></li>
+                </ul>
+        </div>
+        <div class="flianxi"><h3 style="color:#fff;margin-left:50px;">关注我们</h3>
+            <div class="bshare-custom icon-medium-plus" style="margin-top:40px;margin-left:55px;"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a></div><script type="text/javascript" charset="utf-8" src="scripts/fenxiang/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="scripts/fenxiang/bshareC0.js"></script>
+        </div>
+            </div>
+        </div>
+</div>
+<!--    <div id="loginbox">
+        <div class="denglu">
+        登录
+            <p><input type="text" style="width:70%;height:35px;" id="uid" /></p>
+            <p><input type="password" style="width:70%;height:35px;" id="pwd" /></p>
+            <p><button style="width:70%;height:35px;" id="userlogin">登录</button></p>
+</div>
+         <div class="zhuce">
+        注册
+             <p><input type="text" style="width:70%;height:35px;"/></p>
+             <p><input type="password" style="width:70%;height:35px;"/></p>
+             <p><button style="width:70%;height:35px;">注册</button></p>
+         </div>
+    </div>-->
+
+            <div id="videobox">
+        <div id="jwplayer" style="background: transparent !important; margin:0 auto; width:800px; height:540px; overflow:hidden;">
+	<div id="player"></div>
+    </div>
+        </div>
+   <!-- 登录框-->
+	<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+			<ul class="cd-switcher" style="list-style:none;">
+				<li><a href="#0">登录</a></li>
+				<li><a href="#0">注册</a></li>
+			</ul>
+
+			<div id="cd-login"> <!-- log in form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signin-email">邮箱</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="邮箱">
+						<span class="cd-error-message">邮箱填写错误!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password">密码</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="密码">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="remember-me" checked>
+						<label for="remember-me">记住密码</label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="登录">
+					</p>
+				</form>
+				
+				<p class="cd-form-bottom-message"><a href="#0"><!--注册会员--></a></p>
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-login -->
+
+			<div id="cd-signup"> <!-- sign up form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-username">用户名</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="用户名">
+						<span class="cd-error-message">用户名错误！</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signup-email">邮箱</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="邮箱">
+						<span class="cd-error-message">邮箱填写错误!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">密码</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="密码">
+						<a href="#0" class="hide-password">Hide</a>
+						<span class="cd-error-message">Error message here!</span>
+					</p>
+
+<!--					<p class="fieldset">
+						<input type="checkbox" id="accept-terms">
+						<label for="accept-terms">同意<a href="#0">Terms</a></label>
+					</p>-->
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="注册">
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-signup -->
+
+			<div id="cd-reset-password"> <!-- reset password form -->
+				<p class="cd-form-message">丢失了你的密码？请输入您的电子邮件地址。您将收到一个链接，以创建一个新的密码。</p>
+
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="reset-email">邮箱</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="邮箱">
+						<span class="cd-error-message">邮箱填写错误！</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="发送密码">
+					</p>
+				</form>
+
+				<p class="cd-form-bottom-message"><a href="#0">返回登录界面</a></p>
+			</div> <!-- cd-reset-password -->
+			<a href="#0" class="cd-close-form">Close</a>
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
+        <script>
+            if (navigator.userAgent.indexOf("MSIE") > 0) {
+                if (navigator.userAgent.indexOf("MSIE 6.0") > 0) {
+                    alert("当前页面不支持IE9以下版本，请更新浏览器！");
+                }
+                if (navigator.userAgent.indexOf("MSIE 7.0") > 0) {
+                    alert("当前页面不支持IE9以下版本，请更新浏览器！");
+                }
+                if (navigator.userAgent.indexOf("MSIE 9.0") > 0 && !window.innerWidth) {//ie8这里是重点，你懂的
+                    alert("当前页面不支持IE9以下版本，请更新浏览器！");
+                }
+                if (navigator.userAgent.indexOf("MSIE 9.0") > 0) {
+                    alert("当前页面不支持IE9以下版本，请更新浏览器！");
+                }
+            }
+    </script>
+    <div id="xuangua"><div  class="fabiao">+</div><div class="top">↑</div></div>
+<script src="scripts/less.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="Scripts/ui.js"></script>
+<script src="scripts/layer.js"></script>
+<script src="scripts/jquery-cookie/jquery.cookie.js"></script>
+<script src="scripts/jquery.page.js"></script>
+<script src="scripts/index_script.js"></script>
+    <!--    登录-->
+    <link rel="stylesheet" href="login/css/Style.css">
+    <link rel="stylesheet" href="login/css/reset.css">
+	<script src="login/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="login/js/main.js"></script> <!-- Gem jQuery -->
+</body>
+</html>
